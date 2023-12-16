@@ -12,7 +12,7 @@ resource "docker_container" "my_nginx_container" {
     image = docker_image.meri_nginx_image.image_id
     name = "nginx-container"
     ports{
-        internal = 80
-        external = 80
+        internal = 8000
+        external = 8000
     }  
 }
